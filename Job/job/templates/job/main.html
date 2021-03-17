@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume For you</title>
+    <link rel="stylesheet" type="text/css" href=" {% static 'css/Style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <meta charset="UTF-8">
+
+ 
+</head>
+<body>
+<div class="all">
+
+<div class="main">
+
+</div>
+<div class="setting">
+    <img src="#" style="width:100%" alt="Avatar">
+    
+
+</div>
+<div class="resume">
+    
+    
+    
+        
+        {% block content %}
+        
+        
+        {% endblock  %}
+
+    
+</div>
+
+<div class="footer">
+    <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  <p>Find me on social media</p>
+ 
+  <ul>
+      <li><a  href="#"><img id="icon" src="{% static 'images/icons/fb.png' %}"  alt="fb"></a></li>
+      <li><a  href="#"><img id="icon" src="{% static 'images/icons/yt.png' %}"  alt="yt"></a></li>
+      <li><a  href="#"><img id="icon" src="{% static 'images/icons/tw.png' %}"  alt="tw"></a></li>
+      <li><a  href="#"><img id="icon" src="{% static 'images/icons/in.png' %}"  alt="in"></a></li>
+      
+    </ul>
+  <p>Powered by <a href="#" target="_blank">Yahia</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

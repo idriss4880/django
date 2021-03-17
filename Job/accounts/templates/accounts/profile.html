@@ -1,0 +1,49 @@
+
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{%load static%}
+{% block body %} 
+<div class="container p-5">
+    <table class="table">
+    <thead>
+        <tr></tr>
+    </thead>
+    
+        <tr>
+        <th >
+        
+    
+                            {% if profile.image %}
+                            <img  style="vertical-align: middle;width: 150px;height:150px;border-radius: 50%!important;" src="{{profile.image.url}}" class="rounded float-start" 
+                                alt="Avatar">
+                            {% else %}
+                            <img  style="vertical-align: middle;width: 150px;height:150px;border-radius: 50%!important;"  src="{% static 'img/no-image.png' %}" class="rounded float-start" 
+                                alt="Avatar">
+                            {% endif %}</th>
+                            
+                        <td>
+                        <h5>user : {{profile}}</h5>
+                        <h5>email : {{profile.user.email}}</h5>
+                        <h5>phone number : {{profile.phone_number}}</h5>
+                        <h5>country : {{profile.country}}</h5>
+                        
+                        
+                        
+                        
+                        </td>
+                        <td><h4><a class="boxed-btn3 w-100" href="{% url 'accounts:profile_edit' %}"><i class="fas fa-user-edit"></i> Edit Profile</a></h4></td>
+                        
+
+                        
+                        
+            </tr>
+        
+    </table>
+</div>
+{% endblock body %}
+
+
+
+
+
+ 

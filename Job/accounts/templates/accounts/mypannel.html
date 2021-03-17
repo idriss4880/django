@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block body %} 
+<div class="container p-5">
+  <div class="row">
+    <div class="col-sm">
+        <div class="card" >
+
+        <div class="card-body">
+        <h3>costsomers</h3>
+        <a href="#" class="btn btn-success">Create <i class="far fa-plus-circle"></i></a>
+        <table class="table">
+            <thead>
+                <tr>
+                
+                <th scope="col">user</th>
+                <th scope="col">country</th>
+                <th scope="col">phone_number</th>
+                <th scope="col">action</th>
+                <th scope="col">show</th>
+
+                </tr>
+            </thead>
+            
+            <tbody>
+                    {% for t in mypannel %} 
+                    <tr>
+                    <td>{{t.user}}</td>
+                    <td>{{t.country}}</td>
+                    <td>{{t.phone_number}}</td>
+                    <td>
+                        <a href="#"><i class="fas fa-edit"></i></a>
+                        <a class="text-danger"  href="#"><i class="far fa-trash-alt"></i></a>
+                    </td>
+                    <td><a  href="#"><i class="fas fa-eye"></i></a></td>
+                    </tr>
+                    {% endfor %}
+
+                
+                
+            </tbody>
+        </table>  
+        </div>
+    </div>
+    </div>
+    <div class="col-sm">
+            
+            <div class="card" >
+
+            <div class="card-body">
+            <h3>Products</h3>
+            <a href="#" class="btn btn-success">Create</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                    
+                    <th scope="col">owner</th>
+                    <th scope="col">title</th>
+                    <th scope="col">price</th>
+                    <th scope="col">action</th>
+                    <th scope="col">show</th>
+
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    
+
+                        {% for item in myproduct %}
+                            <tr>
+                            <td>{{item.owner}}</td>
+                            <td>{{item.title}}</td>
+                            <td>{{item.price}}</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a class="text-danger" href="#"><i class="far fa-trash-alt"></i></a>
+                            </td>
+                            <td><a  href="#"><i class="fas fa-eye"></i></a></td>
+                            
+                            
+                            </tr>
+                        {% endfor %}
+                    
+                </tbody>
+            </table></div>
+    </div>
+    </div>
+    
+  </div>
+  
+</div>
+
+{% endblock body %}
+
+
+
+
+
+ 

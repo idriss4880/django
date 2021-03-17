@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+
+}
+.all{
+    box-sizing: inherit;
+    float:left;
+    width:100%;
+    
+    color: #000!important;
+    background-color: #f1f1f1!important;
+
+}
+p{
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+}
+
+img {
+    vertical-align: middle;
+    
+}
+#info{
+    padding: 0.01em 5px;
+    font-size: 12px;
+}
+.skill{
+    
+}
+.title_skill{
+    color: #101010;
+    font-size: 16px;
+
+}
+.prest{
+    width:100%;background-color: #a3a0a0!important;border-radius: 16px;
+
+}
+.pres{
+width:80%;
+height:0.6em;
+color: #fff;
+border-radius: 16px;
+background-color: #24a43d!important;
+text-align:center!important;
+}
+.hr{
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    width: 80%;
+}
+
+.resume{
+
+    margin-bottom: 35px!important;
+    width: 72%;
+    height: 100%;
+    float:left;
+    margin-left: 3%;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.90);   
+}
+
+
+.footer{
+    background-color: #adadad;
+    height: 100%;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 32px;
+
+}
+.footer p{
+        text-align: center;
+        color: #000;
+}
+ul{
+display: inline-flex;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: #000;
+    text-decoration: auto;
+}
+#icon{
+
+    width:20%; 
+    height:auto;
+}
+.who #icon{
+    margin-right: 7px;
+    width: 17%;
+    height: auto;
+}
+nav a{
+    padding: 10px;
+}
+ul #icon{
+    width: 66px;
+    padding: 10px;
+}
+.main{
+    background-color:#adadad;
+    height:85px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+.main nav{
+    width: 100%;
+    direction: rtl;
+    text-align: right;
+}
+.main img{
+    width: 50px;height:auto; margin: 2%;float: left;
+
+
+
+}
+
+.left {
+
+   
+    float:left;
+    width: 30%;
+    
+    
+    background-color: #bebebe42;
+    height: 100%;
+    padding-bottom: 30px;
+
+}
+.setting{
+
+    margin-left: 3%;
+    float:left;
+    width: 20%;
+    
+    
+    background-color: #fff;
+    height: 500px;
+    padding-bottom: 30px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.90);   
+
+}
+.right{
+    float:left;
+    width: 70%;
+    margin-left: 10px: 
+}
+
+.left img{
+    text-align: center;
+    margin: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
